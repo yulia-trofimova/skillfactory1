@@ -3,50 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайт-визитка Юлии Трофимовой</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-<header>
-    <h1>Трофимова Юлия</h1>
-    <img src="july_trofimova.png" alt="Фото профиля">
+<header class="container">
+    <nav class="buttons">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#education">Образование</a></li>
+            <li><a href="#hobby">Хобби</a></li>
+            <li><a href="#knowledge">Знания</a></li>
+            <li><a href="#contacts">Связаться</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <section>
-        <h2>Oбо мне</h2>
-        <p>В 32 года решила поменять специальность и раскрыть свой творческий потенциал:)</p>
+<main class="container">
+
+    <section class="picture">
+        <img src="july_trofimova.png" alt="Фото профиля">
+        <h1>Трофимова Юлия</h1>
     </section>
-    <section>
-        <h2>Образование</h2>
-        <p>НГУЭиУ "Социально-культурный сервис и туризм"</p>
-        <p>НГУЭиУ "Переводчик в сфере профессиональных коммуникаций"</p>
+    <section class="about-me info-section" id="about">
+        <div class="section-content">
+            <h2>Oбо мне</h2>
+            <p>В 32 года решила поменять специальность и раскрыть свой творческий потенциал:)</p>
+        </div>
     </section>
-    <section>
-        <h2>Хобби</h2>
-        <ul>
-            <li>Чтение</li>
-            <li>Лесные прогулки</li>
-            <li>Наука</li>
-        </ul>
+
+
+    <section class="my-education info-section" id="education">
+        <div class="section-content">
+            <h2>Образование</h2>
+            <ol>
+                <li>НГУЭиУ "Социально-культурный сервис и туризм"</li>
+                <li>НГУЭиУ "Переводчик в сфере профессиональных коммуникаций"</li>
+            </ol>
+        </div>
     </section>
-    <section>
-        <h2>Базовые знания на текущий момент</h2>
-        <ul>
-            <li>
-                HTML
-            </li>
-            <li>
-                SCSS
-            </li>
-            <li>
-                Craft CMS
-            </li>
-            <li>
-                Гуглить
-            </li>
-        </ul>
+    <section class="my-hobby info-section" id="hobby">
+        <div class="section-content">
+            <h2>Хобби</h2>
+            <ul>
+                <li>Чтение</li>
+                <li>Лесные прогулки</li>
+                <li>Наука</li>
+            </ul>
+        </div>
+    </section>
+    <section class="my-knowledge info-section" id="knowledge">
+        <div class="section-content">
+            <h2>Базовые знания на текущий момент</h2>
+            <ul>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    SCSS
+                </li>
+                <li>
+                    Craft CMS
+                </li>
+                <li>
+                    Гуглить
+                </li>
+            </ul>
+        </div>
     </section>
 </main>
-<footer>
-    <h2>Контакты</h2>
+<footer class="container my-contacts" id="contacts">
     <p>Телефон:&emsp;<a href="tel:+79826764605">+7 982 676 46 05</a></p>
     <p>HABR:&emsp;<a href="https://career.habr.com/asap-dev">Yulia Trofimova</a></p>
     <p>linkedIn:&emsp;<a href="https://www.linkedin.com/in/yulia-trofimova-853635201/">Yulia Trofimova</a></p>

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding-top: 112px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.buttons {
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
+    border-bottom: solid #5D0192 2px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buttons ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+
+}
+
+.buttons ul li {
+    display: inline-block;
+}
+
+.buttons ul li a {
+    text-decoration: none;
+    padding: 12px 18px;
+    border: solid 1px #5D0192;
+    border-radius: 5px;
+    color: #5D0192;
+    transition: 0.3s ease-in-out;
+    transition-property: background-color, box-shadow, border;
+}
+
+.buttons ul li a:hover {
+    border: solid 1px #9302E8;
+    box-shadow: 5px 5px rgba(0, 0, 255, .1);
+    color: #533778;
+    background-color: rgba(146, 0, 231, 0.2);
+
+}
+
+.buttons ul li + li {
+    margin-left: 20px;
+}
+
+.picture {
+    text-align: center;
+}
+
+.info-section {
+    padding-top: 112px;
+
+}
+
+.section-content {
+    border-left: solid #5D0192 7px;
+    padding: 10px 20px;
+}
+
+.my-contacts {
+    text-align: center;
+    border-top: solid #C3C4C7 2px;
+    margin-top: 100px;
+}
+
+.my-contacts p {
+    display: inline-block;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+.my-contacts p + p {
+    margin-left: 30px;
+
+}
+
+.my-contacts p a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
