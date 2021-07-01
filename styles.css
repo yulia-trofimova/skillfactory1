@@ -1,24 +1,23 @@
 body {
     margin: 0;
-    padding-top: 112px;
 }
+
+
 
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+
 .buttons {
     /*margin-top: 30px;*/
     /*margin-bottom: 30px;*/
-    border-bottom: solid #5D0192 2px;
+
     padding-bottom: 15px;
     padding-top: 15px;
     background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .buttons ul {
@@ -30,67 +29,253 @@ body {
 }
 
 .buttons ul li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+
 }
+
+
+
+
 
 .buttons ul li a {
     text-decoration: none;
-    padding: 12px 18px;
-    border: solid 1px #5D0192;
-    border-radius: 5px;
-    color: #5D0192;
     transition: 0.3s ease-in-out;
     transition-property: background-color, box-shadow, border;
+    text-align: left;
 }
 
 .buttons ul li a:hover {
-    border: solid 1px #9302E8;
-    box-shadow: 5px 5px rgba(0, 0, 255, .1);
-    color: #533778;
-    background-color: rgba(146, 0, 231, 0.2);
+    color: black;
 
 }
 
-.buttons ul li + li {
-    margin-left: 20px;
+.buttons ul li a:focus {
+    color: #2F4181;
+
 }
+
+
+
+
+
+.buttons ul li {
+    margin-left: 0;
+}
+
 
 .picture {
     text-align: center;
+
+
 }
 
+
+
 .info-section {
-    padding-top: 112px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
 
 }
 
 .section-content {
     border-left: solid #5D0192 7px;
-    padding: 10px 20px;
+    padding: 2px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 30px;
+}
+
+.section-content h2 {
+    padding-left: 10px;
+}
+
+.section-content p {
+    padding-left: 10px;
 }
 
 .my-contacts {
-    text-align: center;
-    border-top: solid #C3C4C7 2px;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.my-contacts p {
-    display: inline-block;
-    padding-bottom: 40px;
-    padding-top: 20px;
-
-}
-
-.my-contacts p + p {
-    margin-left: 30px;
-
-}
 
 .my-contacts p a {
     text-decoration: none;
     color: black;
 }
+
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+
+}
+
+.main-part .picture img {
+    width: 100%;
+}
+
+
+footer {
+    border-top: solid #C3C4C7 2px;
+
+
+}
+
+
+@media all and (min-width: 1040px) {
+    .main-part {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media all and (min-width: 1040px) {
+
+    .section-content {
+        padding: 10px 20px;
+
+    }
+}
+
+@media all and (min-width: 1040px) {
+
+    .section-content:first-child {
+        margin-top: 0;
+
+    }
+}
+
+@media all and (min-width: 938px) {
+    .picture {
+        text-align: left;
+    }
+}
+
+
+
+@media all and (min-width: 938px) {
+    .main-part .picture img {
+        width: 448px;
+    }
+}
+
+@media all and (min-width: 938px) {
+    header {
+        border-bottom: solid #5D0192 2px;
+        background-color: #D6C8DE;
+    }
+
+}
+
+@media all and (min-width: 938px) {
+    header .buttons {
+        background-color: #D6C8DE;
+    }
+
+}
+
+@media all and (min-width: 864px) {
+    .buttons ul li {
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 864px) {
+    .buttons ul li a {
+        padding: 12px 18px;
+        border: solid 1px #5D0192;
+        border-radius: 5px;
+        color: #5D0192;
+        background-color: #ffff;
+    }
+
+}
+
+@media all and (min-width: 864px) {
+    .buttons ul li {
+        margin-left: 20px;
+    }
+}
+
+@media all and (min-width: 864px) {
+    .buttons ul li a:hover {
+        border: solid 1px #9302E8;
+        box-shadow: 5px 5px rgba(0, 0, 255, .1);
+        color: #533778;
+        background-color: rgba(146, 0, 231, 0.2);
+
+
+    }
+}
+
+@media all and (min-width: 864px) {
+    footer  {
+      background-color: #E2E7E1;
+
+
+
+
+
+    }
+}
+
+@media all and (min-width: 864px) {
+    .my-contacts  {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+
+
+
+    }
+}
+
+@media all and (min-width: 864px) {
+    .my-contacts  p {
+       margin-left: 30px;
+
+
+
+    }
+}
+
+
+@media all and (min-width: 864px) {
+    .buttons ul li a img {
+        display: none;
+    }
+}
+
+@media all and (min-width: 864px) {
+    h1 {
+        padding-top: 60px;
+    }
+}
+
+
+
+
 
 
 
